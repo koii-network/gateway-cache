@@ -1,0 +1,16 @@
+{
+  "name": "gateway-cache",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@_koi/sdk": "^2.1.16-beta.52",
+    "cron": "^1.8.2",
+    "node-fetch": "^2.6.1"
+  }
+}
