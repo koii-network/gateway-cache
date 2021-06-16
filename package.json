@@ -11,6 +11,7 @@
   "dependencies": {
     "@_koi/sdk": "^2.1.16-beta.52",
     "cron": "^1.8.2",
+    "dotenv": "^10.0.0",
     "node-fetch": "^2.6.1"
   }
 }

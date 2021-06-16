@@ -2,7 +2,7 @@
 const fetch = require('node-fetch');
 const kweb = require("@_koi/sdk/web");
 const CronJob = require('cron').CronJob;
-
+require('dotenv').config()
 let tools = new kweb.Web()
 
 async function fetchNFTList () {
@@ -19,10 +19,11 @@ async function loopTRansactions(nfts){
 
 function pingTransaction(id){
     return new Promise((resolve)=>{
-        fetch(`http://localhost:3000/${id}`).then(()=>{
+        fetch(`${process.env["GATEWAY_URL"]}/${id}`).then(()=>{
             resolve()
         }).catch(()=>{
-            console.log(`${id} - rejected`)
+            console.log(`${id} - rejected`);
+            resolve()
         })
     })
     
