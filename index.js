@@ -33,7 +33,7 @@ async function main(){
     console.log("Got Ids!")
     await loopTRansactions(nftIds)
 }
-var job = new CronJob('0 * * * *', function() {
+var job = new CronJob('0 8 * * *', function() {
     main()
 }, null, true, 'America/Los_Angeles');
 
